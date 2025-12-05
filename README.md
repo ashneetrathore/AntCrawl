@@ -5,7 +5,7 @@ Date: February 2025\
 Developer(s): Ashneet Rathore, Nura Ahmed Nasir Abdalla\
 Based on assignment instructions from Prof. Iftekhar Ahmed and Prof. Cristina Lopes
 
-Ant Crawl is a web crawler that fetches pages from a Spacetime cache server containing 35,000+ links. It starts from some seed urls and systematically follows links, using a custom scraper to extract and filter new urls to visit. The crawler continues until all reachable pages are processed, adhering to common practices used in modern web crawlers to ensure efficient and responsible operation.
+Ant Crawl is a web crawler that fetches pages from a Spacetime cache server containing 35,000+ links. It starts from some seed urls and systematically follows links--hence the name "Ant Crawl", inspired by how ants methodically explore a vast space. A custom scraper is used to extract and filter new urls to visit. The crawler continues until all reachable pages are processed, adhering to common practices used in modern web crawlers to ensure efficient and responsible operation.
 
 ### :classical_building: ARCHITECTURE
 The program follows a custom **frontier-worker architecture** implemented in **Python**. In this design, the frontier serves as a queue of urls to be visited, while a worker fetches pages from the frontier, performs necessary processing, and stores the results.
