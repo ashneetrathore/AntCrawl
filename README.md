@@ -8,7 +8,7 @@ Based on assignment instructions from Prof. Iftekhar Ahmed and Prof. Cristina Lo
 Ant Crawl is a web crawler that fetches pages from a Spacetime cache server containing 35,000+ links. It starts from some seed urls and systematically follows links, using a custom scraper to extract and filter new urls to visit. The crawler continues until all reachable pages are processed, adhering to common practices used in modern web crawlers to ensure efficient and responsible operation.
 
 ### :classical_building: ARCHITECTURE
-The program follows a custom **frontier-worker architecture** implemented in **Python**. In this design, the frontier serves as a queue of urls to be visited, while a worker fetches pages from the frontier, performs necessary processing, and returns or stores the results.
+The program follows a custom **frontier-worker architecture** implemented in **Python**. In this design, the frontier serves as a queue of urls to be visited, while a worker fetches pages from the frontier, performs necessary processing, and stores the results.
 
 Upon launch, the program receives a cache host and port from the Spacetime server and instantiates a crawler. When the crawler starts, a worker takes a link from the frontier, downloads it from the cache server, and passes the response (which contains the page content) to a scraper. The **scraper** extracts links from the page and adds valid new urls to the frontier, and the url that was downloaded is marked as visited. This cycle continues until the frontier has no more urls to download.
 
