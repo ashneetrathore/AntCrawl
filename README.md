@@ -32,7 +32,7 @@ AntCrawl/
 └── .gitignore        # Specifies files and folders that shouldn't be included in the repo
 ```
 
-### :rocket: CONFIGURATION
+### :rocket: CONFIGURATION & EXECUTION
 > [!WARNING]
 > The original Spacetime cache server is no longer live. These instructions show how the project was configured and ran, but the crawler **cannot be executed** anymore. This section is for reference only.
 
