@@ -54,9 +54,10 @@ python -m pip install packages/spacetime-2.1.1-py3-none-any.whl
 python -m pip install -r packages/requirements.txt
 ```
 
-**4. Open `config.ini` and set the `USERAGENT` key to a value of the format `IR UW25 uci-id1,uci-2`**
-```python
-USERAGENT = IR UW25 12345678,87654321 # Example w/h team's UCI IDs
+**4. Open `config.ini` and assign a value of the format `IR UW25 uci-id1,uci-2` to `USERAGENT`**
+```ini
+# Example assignment w/h team members' UCI IDs
+USERAGENT = IR UW25 12345678,87654321
 ```
 
 **5. Run the crawler**
