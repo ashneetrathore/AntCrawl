@@ -42,7 +42,7 @@ git clone https://github.com/ashneetrathore/AntCrawl.git
 cd AntCrawl
 ```
 
-**2. Ensure Python 3.6+ and pip are installed. Check by running the following commands**
+**2. Ensure Python 3.6+ and pip are installed**
 ```bash
 python3 --version
 python3 -m pip --version
