@@ -14,7 +14,7 @@ Upon launch, the program receives a cache host and port from the Spacetime serve
 
 The scraper applies two types of filtering: url-based and content-based. Links are first subjected to low cost **url-based filtering**, where invalid urls, such as those with undesirable file extensions, are never added to the frontier. The program includes a **trap detection** scheme that logs recurring url patterns to identify infinite traps. Once a worker retrieves a url from the frontier and downloads the page, **content-based filtering** is applied, checking for page size, duplicates, low information, etc.
 
-The program additionally gathers and stores analytics on the crawled pages, including the count of unique urls, the page with the most words, and the top 50 most frequent words (excluding common words like "the" or "is").
+The program additionally gathers and stores analytics on the crawled pages, including the count of unique urls, the page with the most words, and the top 50 most frequent words (excluding common words like "the" or "is"). These analytics are written to output files created at runtime.
 
 ### :open_file_folder: PROJECT FILE STRUCTURE
 ```bash
