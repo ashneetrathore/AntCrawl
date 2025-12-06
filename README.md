@@ -33,7 +33,7 @@ AntCrawl/
 ```
 
 > [!WARNING]
-> The original Spacetime cache server is no longer live. These instructions show how the project was configured and ran, but the crawler **cannot be executed** anymore. The upcoming instructions are for reference only.
+> The original Spacetime cache server is no longer live. These instructions show how the project was configured and ran, but the crawler **cannot be executed** anymore. The following is for reference only.
 
 ### :hammer: CONFIGURATION
 **1. Clone the repository**
