@@ -32,10 +32,10 @@ AntCrawl/
 └── .gitignore        # Specifies files and folders that shouldn't be included in the repo
 ```
 
-### :rocket: CONFIGURATION & EXECUTION
 > [!WARNING]
-> The original Spacetime cache server is no longer live. These instructions show how the project was configured and ran, but the crawler **cannot be executed** anymore. This section is for reference only.
+> The original Spacetime cache server is no longer live. These instructions show how the project was configured and ran, but the crawler **cannot be executed** anymore. The upcoming instructions are for reference only.
 
+### :hammer: CONFIGURATION
 **1. Clone the repository**
 ```bash
 git clone https://github.com/ashneetrathore/AntCrawl.git
@@ -60,7 +60,8 @@ python -m pip install -r packages/requirements.txt
 USERAGENT = IR UW25 12345678,87654321
 ```
 
-**5. Run the crawler**
+### :rocket: EXECUTION
+**Run the crawler**
 ```bash
 python3 launch.py
 ```
