@@ -112,3 +112,9 @@ venv.bak/
 Logs/
 *.log
 .idea/
+
+# analytics files
+longest_page.txt
+subdomain.txt
+top50.txt
+unique_url.txt
