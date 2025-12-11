@@ -29,7 +29,7 @@ AntCrawl/
 │── utils/            # Contains helper modules for the crawler
 │── config.ini        # Stores configuration settings
 │── README.md         # Project documentation
-└── .gitignore        # Specifies files and folders that shouldn't be included in the repo
+└── .gitignore        # Excludes files and folders from version control
 ```
 
 ### :hammer: CONFIGURATION
