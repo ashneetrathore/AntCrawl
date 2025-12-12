@@ -1,13 +1,13 @@
-## :ant: ANT CRAWL
+# :ant: ANT CRAWL
 
-### :open_book: OVERVIEW
+## :open_book: OVERVIEW
 Date: February 2025\
 Developer(s): Ashneet Rathore, Nura Ahmed Nasir Abdalla\
 Based on assignment instructions from Prof. Iftekhar Ahmed and Prof. Cristina Lopes
 
 Ant Crawl is a web crawler that fetches pages from a Spacetime cache server containing 35,000+ links. It starts from some seed urls and systematically follows links, hence the name "Ant Crawl", inspired by how ants methodically explore a vast space. A custom scraper is used to extract and filter new urls to visit. The crawler continues until all reachable pages are processed, adhering to common practices used in modern web crawlers to ensure efficient and responsible operation.
 
-### :classical_building: ARCHITECTURE
+## :classical_building: ARCHITECTURE
 The program follows a custom **frontier-worker architecture** implemented in **Python**. In this design, the frontier serves as a queue of urls to be visited, while a worker fetches pages from the frontier, performs necessary processing, and stores the results.
 
 Upon launch, the program receives a cache host and port from the Spacetime server and instantiates a crawler. When the crawler starts, a worker takes a link from the frontier, downloads it from the cache server, and passes the response (which contains the page content) to a scraper. The **scraper** extracts links from the page and adds valid new urls to the frontier, and the url that was downloaded is marked as visited. This cycle continues until the frontier has no more urls to download.
@@ -16,7 +16,7 @@ The scraper applies two types of filtering: url-based and content-based. Links a
 
 The program additionally gathers and stores analytics on the crawled pages, including the count of unique urls, the page with the most words, and the top 50 most frequent words (excluding common words like "the" or "is"). These analytics are written to output files created at runtime.
 
-### :open_file_folder: PROJECT FILE STRUCTURE
+## :open_file_folder: PROJECT FILE STRUCTURE
 ```bash
 AntCrawl/
 │── launch.py         # Connects to the cache server and starts the crawler
@@ -32,7 +32,7 @@ AntCrawl/
 └── .gitignore        # Excludes files and folders from version control
 ```
 
-### :hammer: CONFIGURATION
+## :hammer: CONFIGURATION
 > [!WARNING]
 > The original Spacetime cache server is no longer live. These instructions show how the project was configured and ran, but the crawler **cannot be executed** anymore. The following is for reference only.
 
@@ -60,7 +60,7 @@ python -m pip install -r packages/requirements.txt
 USERAGENT = IR UW25 12345678,87654321
 ```
 
-### :rocket: EXECUTION
+## :rocket: EXECUTION
 Run the crawler
 ```bash
 python3 launch.py
