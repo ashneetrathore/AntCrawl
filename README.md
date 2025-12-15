@@ -39,7 +39,6 @@ AntCrawl/
 **1. Clone the repository**
 ```bash
 git clone https://github.com/ashneetrathore/AntCrawl.git
-cd AntCrawl
 ```
 
 **2. Ensure Python 3.6+ and pip are installed**
@@ -50,6 +49,7 @@ python3 -m pip --version
 
 **3. Install dependencies**
 ```bash
+cd AntCrawl
 python -m pip install packages/spacetime-2.1.1-py3-none-any.whl
 python -m pip install -r packages/requirements.txt
 ```
