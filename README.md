@@ -41,20 +41,14 @@ AntCrawl/
 git clone https://github.com/ashneetrathore/AntCrawl.git
 ```
 
-**2. Ensure Python 3.6+ and pip are installed**
-```bash
-python3 --version
-python3 -m pip --version
-```
-
-**3. Install dependencies**
+**2. Install dependencies**
 ```bash
 cd AntCrawl
 python -m pip install packages/spacetime-2.1.1-py3-none-any.whl
 python -m pip install -r packages/requirements.txt
 ```
 
-**4. Open `config.ini` and assign a value of the format `IR UW25 uci-id1,uci-2` to `USERAGENT`**
+**3. Open `config.ini` and assign a value of the format `IR UW25 uci-id1,uci-2` to `USERAGENT`**
 ```ini
 # Example assignment w/h team members' UCI IDs
 USERAGENT = IR UW25 12345678,87654321
